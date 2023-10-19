@@ -23,10 +23,10 @@ base_generator.to("cuda")
 
 generator = IterativeFeedbackGenerator(base_generator)
 
-prompt = "photo of a big house at Cornell, masterpiece, best quality, fine details"
+prompt = "photo of a fancy car parking on the street, masterpiece, best quality, fine details"
 negative_prompt = "lowres, bad anatomy, bad hands, cropped, worst quality"
 
-path = './cornell/'
+path = './car/'
 Path(path).mkdir(exist_ok=True)
 
 for _ in range(10):
